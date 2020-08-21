@@ -1,8 +1,15 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
-	var dx = oPlayer.hSpeed * (keyRight - keyLeft)
-	var dy = oPlayer.vSpeed * (keyDown - keyUp)
+	
+	var magnitude = (keyUp + keyDown + keyRight + keyLeft);
+	
+	if (magnitude > 1) {
+		magnitude = 0;
+	}
+	
+	var dx = oPlayer.hSpeed * (keyRight - keyLeft) * magnitude;
+	var dy = oPlayer.vSpeed * (keyDown - keyUp) * magnitude;
 	
 	var newX = oPlayer.x + dx
 	var newY = oPlayer.y + dy
