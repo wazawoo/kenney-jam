@@ -8,12 +8,12 @@ function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 		magnitude = 0;
 	}
 	
-	var dx = oPlayer.hSpeed * (keyRight - keyLeft) * magnitude;
-	var dy = oPlayer.vSpeed * (keyDown - keyUp) * magnitude;
+
+	var dx = oPlayer.hSpeed * TILE_SIZE * (keyRight - keyLeft) * magnitude
+	var dy = oPlayer.vSpeed * TILE_SIZE * (keyDown - keyUp) * magnitude
 	
 	var newX = oPlayer.x + dx
 	var newY = oPlayer.y + dy
-	
 	
 	var tileData = tilemap_get_at_pixel(global.tileMap, newX, newY)
 	var tileIndex = tileData & tile_index_mask
