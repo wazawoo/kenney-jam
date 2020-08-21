@@ -21,5 +21,11 @@ function peopleMovement(){
 			x = newX
 			y = newY
 		}
+		
+		if (x < 0 || x >= room_width || y < 0 || y >= room_height) {
+			//out of bounds
+			//kill self
+			instance_destroy()
+		}
 	}	
 }
