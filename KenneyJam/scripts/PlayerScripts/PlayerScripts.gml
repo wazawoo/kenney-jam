@@ -9,7 +9,7 @@ function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 	    var dir = point_direction(0,0,hInput,vInput);
     
 	    if (hInput != 0 || vInput != 0) {
-	      oPlayer.changeSprite(dir)
+	      changeSprite(dir)
 	    }
   
 		var newX = x + dx
