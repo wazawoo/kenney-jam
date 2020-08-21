@@ -7,18 +7,22 @@ function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 	var newX = oPlayer.x + dx
 	var newY = oPlayer.y + dy
 	
-	var tileData = tilemap_get_at_pixel(global.tileMap, newX, newY)
-	var tileIndex = tileData & tile_index_mask
+	if (newX >= 0 && newX < room_width && newY >= 0 && newY < room_height) {	
+		//if the new tile is in bounds, check the tile
+		
+		var tileData = tilemap_get_at_pixel(global.tileMap, newX, newY)
+		var tileIndex = tileData & tile_index_mask
 	
-	//show_debug_message(tileIndex)
+		//show_debug_message(tileIndex)
 	
-	if (ds_list_find_index(global.playerCollisionTiles, tileIndex) != -1) {
-		//we have collided	
-		//show_debug_message()
-	} else {
-		//no collision
-		//free to move
-		oPlayer.x = newX
-		oPlayer.y = newY
-	}		
+		if (ds_list_find_index(global.playerCollisionTiles, tileIndex) != -1) {
+			//we have collided	
+			//show_debug_message()
+		} else {
+			//no collision
+			//free to move
+			oPlayer.x = newX
+			oPlayer.y = newY
+		}
+	}
 }
