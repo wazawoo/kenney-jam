@@ -1,7 +1,11 @@
 {
   "resources": [
+    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"tileSet","path":"tilesets/tileSet/tileSet.yy",},"order":0,},
+    {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":17,},
+    {"id":{"name":"PlayerScripts","path":"scripts/PlayerScripts/PlayerScripts.yy",},"order":0,},
     {"id":{"name":"sTiles","path":"sprites/sTiles/sTiles.yy",},"order":16,},
+    {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":1,},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":15,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
