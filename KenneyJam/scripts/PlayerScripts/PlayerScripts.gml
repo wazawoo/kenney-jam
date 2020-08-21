@@ -2,15 +2,15 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 	with (oPlayer) {
-    var hInput = keyRight - keyLeft;
-    var vInput = keyDown - keyUp;
-    var dx = hSpeed * TILE_SIZE * hInput;
-    var dy = vSpeed * TILE_SIZE * vInput;
-    var dir = point_direction(0,0,hInput,vInput);
+	    var hInput = keyRight - keyLeft;
+	    var vInput = keyDown - keyUp;
+	    var dx = hSpeed * TILE_SIZE * hInput;
+	    var dy = vSpeed * TILE_SIZE * vInput;
+	    var dir = point_direction(0,0,hInput,vInput);
     
-    if (hInput != 0 || vInput != 0) {
-      oPlayer.changeSprite(dir)
-    }
+	    if (hInput != 0 || vInput != 0) {
+	      oPlayer.changeSprite(dir)
+	    }
   
 		var newX = x + dx
 		var newY = y + dy
@@ -44,4 +44,16 @@ function playerAction(keySpace) {
 			instance_create_layer(x, y, "Effects", oCurse)
 		}	
 	}	
+}
+
+function changeSprite(dir) {
+	with (oPlayer) {
+		show_debug_message(dir)
+		switch(floor(dir)) {
+			case 0: sprite_index = ghost_r; break;
+			case 90: sprite_index = ghost_u; break;
+			case 180.00: sprite_index = ghost_l; break;
+			case 270: sprite_index = sPlayer; break;
+		}
+	}
 }
