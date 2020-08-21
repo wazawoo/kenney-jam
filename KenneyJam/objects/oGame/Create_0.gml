@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//resize the surface so the gui is the same size as the game
+surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);
 game_set_speed(FRAME_RATE, gamespeed_fps);
 draw_set_font(fontMain);
 
