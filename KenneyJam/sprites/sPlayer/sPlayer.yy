@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"534c7e69-b88c-4cce-8938-e11f52bdbed7","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "KenneyJam",
-    "path": "KenneyJam.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayer",

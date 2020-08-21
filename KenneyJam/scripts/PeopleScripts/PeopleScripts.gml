@@ -4,10 +4,8 @@ function peopleMovement(){
 	with (oPerson) {
 		//do this for each instance of oPerson
 		
-		//for now, lets just try moving down every time
-		
-		var newX = x
-		var newY = y + TILE_SIZE
+		var newX = x + hSpeed * TILE_SIZE
+		var newY = y + vSpeed * TILE_SIZE
 		
 		var tileData = tilemap_get_at_pixel(global.tileMap, newX, newY)
 		var tileIndex = tileData & tile_index_mask
