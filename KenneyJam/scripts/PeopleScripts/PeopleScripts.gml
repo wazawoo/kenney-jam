@@ -4,10 +4,8 @@ function peopleMovement(){
 	with (oPerson) {
 		//do this for each instance of oPerson
 		
-		//for now, lets just try moving down every time
-		
-		var newX = x
-		var newY = y + TILE_SIZE
+		var newX = x + hSpeed * TILE_SIZE
+		var newY = y + vSpeed * TILE_SIZE
 		
 		var tileData = tilemap_get_at_pixel(global.tileMap, newX, newY)
 		var tileIndex = tileData & tile_index_mask
@@ -20,6 +18,12 @@ function peopleMovement(){
 			//free to move
 			x = newX
 			y = newY
+		}
+		
+		if (x < 0 || x >= room_width || y < 0 || y >= room_height) {
+			//out of bounds
+			//kill self
+			instance_destroy()
 		}
 	}	
 }
