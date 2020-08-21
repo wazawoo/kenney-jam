@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 game_set_speed(FRAME_RATE, gamespeed_fps);
+draw_set_font(fontMain);
 
 global.stepCount = 0
 global.tileMap = layer_tilemap_get_id(layer_get_id("Tiles_1"));
