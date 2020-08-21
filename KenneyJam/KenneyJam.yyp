@@ -1,18 +1,21 @@
 {
   "resources": [
+    {"id":{"name":"ghost_r","path":"sprites/ghost_r/ghost_r.yy",},"order":2,},
     {"id":{"name":"oPerson","path":"objects/oPerson/oPerson.yy",},"order":2,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":1,},
     {"id":{"name":"PeopleScripts","path":"scripts/PeopleScripts/PeopleScripts.yy",},"order":2,},
     {"id":{"name":"tileSet","path":"tilesets/tileSet/tileSet.yy",},"order":0,},
+    {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":17,},
+    {"id":{"name":"ghost_u","path":"sprites/ghost_u/ghost_u.yy",},"order":0,},
     {"id":{"name":"sCurse","path":"sprites/sCurse/sCurse.yy",},"order":0,},
-    {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":2,},
     {"id":{"name":"fontMain","path":"fonts/fontMain/fontMain.yy",},"order":0,},
     {"id":{"name":"sPerson","path":"sprites/sPerson/sPerson.yy",},"order":1,},
     {"id":{"name":"PlayerScripts","path":"scripts/PlayerScripts/PlayerScripts.yy",},"order":0,},
     {"id":{"name":"sTiles","path":"sprites/sTiles/sTiles.yy",},"order":3,},
     {"id":{"name":"oCurse","path":"objects/oCurse/oCurse.yy",},"order":3,},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":1,},
+    {"id":{"name":"ghost_l","path":"sprites/ghost_l/ghost_l.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [

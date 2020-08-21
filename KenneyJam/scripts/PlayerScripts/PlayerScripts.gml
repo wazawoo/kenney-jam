@@ -2,9 +2,16 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 	with (oPlayer) {
-		var dx = hSpeed * TILE_SIZE * (keyRight - keyLeft)
-		var dy = vSpeed * TILE_SIZE * (keyDown - keyUp)
-	
+    var hInput = keyRight - keyLeft;
+    var vInput = keyDown - keyUp;
+    var dx = hSpeed * TILE_SIZE * hInput;
+    var dy = vSpeed * TILE_SIZE * vInput;
+    var dir = point_direction(0,0,hInput,vInput);
+    
+    if (hInput != 0 || vInput != 0) {
+      oPlayer.changeSprite(dir)
+    }
+  
 		var newX = x + dx
 		var newY = y + dy
 	
@@ -13,8 +20,6 @@ function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 		
 			var tileData = tilemap_get_at_pixel(global.tileMap, newX, newY)
 			var tileIndex = tileData & tile_index_mask
-	
-			//show_debug_message(tileIndex)
 	
 			if (ds_list_find_index(global.playerCollisionTiles, tileIndex) != -1) {
 				//we have collided	
