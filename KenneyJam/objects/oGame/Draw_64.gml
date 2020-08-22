@@ -22,10 +22,15 @@ if (numPeople == 0) {
 	global.readyToAdvance = true
 	draw_text(text_x, advance_text_y, "smack any key u want")
 	
-	if (global.advanceNow && room != room_last) {
+	if (global.advanceNow) {
 		global.readyToAdvance = false
 		global.advanceNow = false
 		
-		room_goto_next()
+		//temp: loop back to first room for rapid testing
+		if (room == room_last) {
+			room_goto(roomIntro)
+		} else {
+			room_goto_next()
+		}
 	}
 }
