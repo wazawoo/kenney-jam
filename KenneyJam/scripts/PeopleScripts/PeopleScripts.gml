@@ -10,6 +10,7 @@ function peopleMovement(){
 		var tileData = tilemap_get_at_pixel(global.tileMap, newX, newY)
 		var tileIndex = tileData & tile_index_mask
 	
+		//move
 		if (ds_list_find_index(global.personCollisionTiles, tileIndex) != -1) {
 			//we have collided	
 			//show_debug_message()
@@ -23,9 +24,14 @@ function peopleMovement(){
 			y = newY
 		}
 		
+		//check if we need to die
 		if (x < 0 || x >= room_width || y < 0 || y >= room_height) {
 			//out of bounds
-			//kill self
+			//die
+			instance_destroy()
+		} else if (ds_list_find_index(global.personDeathTiles, tileIndex) != -1) {
+			//we collided with a dangerous tile
+			//die
 			instance_destroy()
 		}
 	}	
