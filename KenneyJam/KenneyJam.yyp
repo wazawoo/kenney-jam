@@ -4,6 +4,7 @@
     {"id":{"name":"oPerson","path":"objects/oPerson/oPerson.yy",},"order":2,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":1,},
+    {"id":{"name":"RoomIntro","path":"rooms/RoomIntro/RoomIntro.yy",},"order":1,},
     {"id":{"name":"PeopleScripts","path":"scripts/PeopleScripts/PeopleScripts.yy",},"order":2,},
     {"id":{"name":"tileSet","path":"tilesets/tileSet/tileSet.yy",},"order":0,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":17,},
@@ -36,6 +37,7 @@
     "children": [],
   },
   "RoomOrder": [
+    {"name":"RoomIntro","path":"rooms/RoomIntro/RoomIntro.yy",},
     {"name":"Room1","path":"rooms/Room1/Room1.yy",},
   ],
   "Folders": [

@@ -4,3 +4,6 @@
 //set the speed based on the speed stored in the curse
 hSpeed = other.hSpeed
 vSpeed = other.vSpeed
+
+//change colors (use the second frame)
+image_index = 1
