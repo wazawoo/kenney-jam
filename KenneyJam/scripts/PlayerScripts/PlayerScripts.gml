@@ -7,7 +7,7 @@ function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 	    var dx = hSpeed * TILE_SIZE * hInput;
 	    var dy = vSpeed * TILE_SIZE * vInput;
 	    var dir = point_direction(0,0,hInput,vInput);
-    
+	
 	    if (hInput != 0 || vInput != 0) {
 	      changeSprite(dir)
 	    }
@@ -36,24 +36,47 @@ function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 
 function playerAction(keySpace) {	
 	with (oPlayer) {
-		//if space pressed, create a curse
+		//if space pressed, create a curse (in the direction the player is facing)
 		//curse dies after its animation is done
 		//if anything collides with it, it will become cursed
 		
 		if (keySpace) {
-			instance_create_layer(x, y, "Effects", oCurse)
+			var dx = 0
+			var dy = 0
+			
+			switch(lastDir) {
+				case 0:
+					//right
+					dx = TILE_SIZE
+					break;
+				case 90:
+					//up
+					dy = -TILE_SIZE
+					break;
+				case 180:
+					//left
+					dx = -TILE_SIZE
+					break;
+				case 270:
+					//down
+					dy = TILE_SIZE
+					break;
+			}	
+			
+			instance_create_layer(x + dx, y + dy, "Effects", oCurse)
 		}	
 	}	
 }
 
 function changeSprite(dir) {
 	with (oPlayer) {
-		show_debug_message(dir)
+		//show_debug_message(dir)
 		switch(floor(dir)) {
 			case 0: sprite_index = ghost_r; break;
 			case 90: sprite_index = ghost_u; break;
 			case 180.00: sprite_index = ghost_l; break;
 			case 270: sprite_index = sPlayer; break;
 		}
+		lastDir = floor(dir)
 	}
 }

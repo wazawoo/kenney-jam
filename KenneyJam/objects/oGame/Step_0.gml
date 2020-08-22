@@ -8,8 +8,8 @@ keyDown  = keyboard_check_pressed(vk_down)  || keyboard_check_pressed(ord("S"));
 keySpace = keyboard_check_pressed(vk_space);
 
 
-playerAction(keySpace);
 playerMovement(keyUp, keyLeft, keyRight, keyDown);
+playerAction(keySpace);
 
 if (global.stepCount % FRAME_RATE == 0) {
 	//one second timer
