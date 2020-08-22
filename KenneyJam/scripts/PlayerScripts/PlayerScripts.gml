@@ -64,12 +64,16 @@ function playerAction(keySpace) {
 					dy = 1
 					break;
 			}	
-		
-			var newCurse = instance_create_layer(x + dx*TILE_SIZE, y + dy*TILE_SIZE, "Effects", oCurse)
 			
-			//pass on the correct speed based on the direction we are facing
-			newCurse.hSpeed = dx
-			newCurse.vSpeed = dy
+			if (cursesLeft > 0) {				
+				var newCurse = instance_create_layer(x + dx*TILE_SIZE, y + dy*TILE_SIZE, "Effects", oCurse)
+			
+				//pass on the correct speed based on the direction we are facing
+				newCurse.hSpeed = dx
+				newCurse.vSpeed = dy
+				cursesLeft -= 1;
+			}
+			
 		}	
 	}	
 }

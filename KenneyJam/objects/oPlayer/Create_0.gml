@@ -5,4 +5,6 @@
 hSpeed = 0
 vSpeed = 0
 
+cursesLeft = 5;
+
 lastDir = 270
