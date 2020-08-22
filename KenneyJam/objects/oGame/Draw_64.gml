@@ -19,7 +19,7 @@ var text_y = TILE_SIZE*2
 var advance_text_y = RESOLUTION_H - TILE_SIZE*1
 
 var numPeople = instance_number(oPerson)
-var text = " people remaining"
+var text = " people remain"
 if (numPeople == 1) {
 	text = " person remains"
 }
