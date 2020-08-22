@@ -20,10 +20,12 @@ function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 		
 			var tileData = tilemap_get_at_pixel(global.tileMap, newX, newY)
 			var tileIndex = tileData & tile_index_mask
-	
+		
 			if (ds_list_find_index(global.playerCollisionTiles, tileIndex) != -1) {
-				//we have collided	
+				//we have collided with a collidable tile
 				//show_debug_message()
+			} else if (position_meeting(newX, newY, oPerson)) {
+				//we have collided with a collidable object
 			} else {
 				//no collision
 				//free to move
