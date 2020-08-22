@@ -39,8 +39,8 @@
   },
   "RoomOrder": [
     {"name":"roomIntro","path":"rooms/roomIntro/roomIntro.yy",},
-    {"name":"room2","path":"rooms/room2/room2.yy",},
     {"name":"room1","path":"rooms/room1/room1.yy",},
+    {"name":"room2","path":"rooms/room2/room2.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
