@@ -8,6 +8,7 @@ draw_set_valign(fa_middle)
 
 var text_x = RESOLUTION_W / 2
 var text_y = TILE_SIZE*2
+var advance_text_y = RESOLUTION_H - TILE_SIZE*1.5
 
 var numPeople = instance_number(oPerson)
 var text = " people remain"
@@ -16,3 +17,15 @@ if (numPeople == 1) {
 }
 
 draw_text(text_x, text_y, string(numPeople) + text)
+
+if (numPeople == 0) {
+	global.readyToAdvance = true
+	draw_text(text_x, advance_text_y, "smack any key u want")
+	
+	if (global.advanceNow && room != room_last) {
+		global.readyToAdvance = false
+		global.advanceNow = false
+		
+		room_goto_next()
+	}
+}

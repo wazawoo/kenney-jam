@@ -8,6 +8,8 @@ draw_set_font(fontMain);
 
 global.stepCount = 0
 global.tileMap = layer_tilemap_get_id(layer_get_id("Tiles_1"));
+global.readyToAdvance = false
+global.advanceNow = false
 
 //tiles
 //these numbers correspond to the index of the tile, which is the frame number - 1

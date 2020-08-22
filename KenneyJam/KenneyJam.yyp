@@ -4,7 +4,7 @@
     {"id":{"name":"oPerson","path":"objects/oPerson/oPerson.yy",},"order":2,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":1,},
-    {"id":{"name":"RoomIntro","path":"rooms/RoomIntro/RoomIntro.yy",},"order":1,},
+    {"id":{"name":"roomIntro","path":"rooms/roomIntro/roomIntro.yy",},"order":1,},
     {"id":{"name":"PeopleScripts","path":"scripts/PeopleScripts/PeopleScripts.yy",},"order":2,},
     {"id":{"name":"tileSet","path":"tilesets/tileSet/tileSet.yy",},"order":0,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":17,},
@@ -17,7 +17,7 @@
     {"id":{"name":"oCurse","path":"objects/oCurse/oCurse.yy",},"order":3,},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":1,},
     {"id":{"name":"ghost_l","path":"sprites/ghost_l/ghost_l.yy",},"order":1,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"room1","path":"rooms/room1/room1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Amazon Fire","path":"options/amazonfire/options_amazonfire.yy",},
@@ -37,8 +37,8 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"RoomIntro","path":"rooms/RoomIntro/RoomIntro.yy",},
-    {"name":"Room1","path":"rooms/Room1/Room1.yy",},
+    {"name":"roomIntro","path":"rooms/roomIntro/roomIntro.yy",},
+    {"name":"room1","path":"rooms/room1/room1.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

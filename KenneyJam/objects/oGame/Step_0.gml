@@ -6,7 +6,11 @@ keyRight = keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("D"));
 keyUp    = keyboard_check_pressed(vk_up)    || keyboard_check_pressed(ord("W")); 
 keyDown  = keyboard_check_pressed(vk_down)  || keyboard_check_pressed(ord("S"));
 keySpace = keyboard_check_pressed(vk_space);
+keyAny   = keyboard_check_pressed(vk_anykey);
 
+if (global.readyToAdvance) {
+	global.advanceNow = keyAny
+}
 
 playerMovement(keyUp, keyLeft, keyRight, keyDown);
 playerAction(keySpace);
