@@ -22,18 +22,43 @@ global.playerCollisionTiles = ds_list_create()
 //ds_list_add(global.playerCollisionTiles, 250) //water - corner
 //ds_list_add(global.playerCollisionTiles, 556) //fire
 
-global.personCollisionTiles = ds_list_create()
-ds_list_add(global.personCollisionTiles, 54) //cactus
 
+var deathTiles = [200, 201, 202, 204, 249, 250, 251, 252, 252, 253, 556];
+// 200 - Water
+// 201 - Water
+// 202 - Water
+// 203 - Water
+// 204 - Water
+// 249 - Water
+// 250 - Water
+// 251 - Water
+// 252 - Water
+// 253 - Water
+// 556 - Fire
+
+
+global.personCollisionTiles = ds_list_create()
 global.personDeathTiles = ds_list_create()
-ds_list_add(global.personDeathTiles, 200) //water
-ds_list_add(global.personDeathTiles, 201) //water
-ds_list_add(global.personDeathTiles, 202) //water
-ds_list_add(global.personDeathTiles, 203) //water
-ds_list_add(global.personDeathTiles, 204) //water
-ds_list_add(global.personDeathTiles, 249) //water
-ds_list_add(global.personDeathTiles, 250) //water
-ds_list_add(global.personDeathTiles, 251) //water
-ds_list_add(global.personDeathTiles, 252) //water
-ds_list_add(global.personDeathTiles, 253) //water
-ds_list_add(global.personDeathTiles, 556) //fire
+
+
+// I'm not used to having this much memory so I'm going to waste it all!!!!
+// Adds all tiles as collision tiles unless in deathTiles array
+// then add as death tile
+
+for (var i = 1; i < 1009; i ++) {
+	for (var itwo = 0; itwo < array_length_1d(deathTiles); itwo++) {	
+		if (i == deathTiles[itwo]) {
+			ds_list_add(global.personDeathTiles, i) //water
+		} else {
+			ds_list_add(global.personCollisionTiles, i) //cactus
+		}
+	}
+}
+
+
+//ds_list_add(global.personCollisionTiles, 54) //cactus
+
+
+
+
+
