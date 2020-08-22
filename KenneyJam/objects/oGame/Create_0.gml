@@ -35,6 +35,7 @@ var deathTiles = [200, 201, 202, 204, 249, 250, 251, 252, 252, 253, 556];
 // 252 - Water
 // 253 - Water
 // 556 - Fire
+//
 
 
 global.personCollisionTiles = ds_list_create()
