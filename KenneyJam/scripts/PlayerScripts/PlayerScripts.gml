@@ -2,13 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 	with (oPlayer) {
-	    var hInput = keyRight - keyLeft;
-	    var vInput = keyDown - keyUp;
-	    var dx = hSpeed * TILE_SIZE * hInput;
-	    var dy = vSpeed * TILE_SIZE * vInput;
-	    var dir = point_direction(0,0,hInput,vInput);
+	    hSpeed = keyRight - keyLeft;
+	    vSpeed = keyDown - keyUp;
+	    var dx = hSpeed * TILE_SIZE;
+	    var dy = vSpeed * TILE_SIZE;
+	    var dir = point_direction(0,0,hSpeed,vSpeed);
 	
-	    if (hInput != 0 || vInput != 0) {
+	    if (hSpeed != 0 || vSpeed != 0) {
 	      changeSprite(dir)
 	    }
   
@@ -49,23 +49,27 @@ function playerAction(keySpace) {
 			switch(lastDir) {
 				case 0:
 					//right
-					dx = TILE_SIZE
+					dx = 1
 					break;
 				case 90:
 					//up
-					dy = -TILE_SIZE
+					dy = -1
 					break;
 				case 180:
 					//left
-					dx = -TILE_SIZE
+					dx = -1
 					break;
 				case 270:
 					//down
-					dy = TILE_SIZE
+					dy = 1
 					break;
 			}	
+		
+			var newCurse = instance_create_layer(x + dx*TILE_SIZE, y + dy*TILE_SIZE, "Effects", oCurse)
 			
-			instance_create_layer(x + dx, y + dy, "Effects", oCurse)
+			//pass on the correct speed based on the direction we are facing
+			newCurse.hSpeed = dx
+			newCurse.vSpeed = dy
 		}	
 	}	
 }

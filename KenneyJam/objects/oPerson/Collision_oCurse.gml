@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//for a test, curses kill the player
-instance_destroy();
+//set the speed based on the speed stored in the curse
+hSpeed = other.hSpeed
+vSpeed = other.vSpeed

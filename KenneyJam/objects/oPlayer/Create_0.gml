@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 //this is in tiles
-hSpeed = 1
-vSpeed = 1
+hSpeed = 0
+vSpeed = 0
 
 lastDir = 270
