@@ -3,10 +3,11 @@
 
 // display number of curses you have left
 
-var cursesRemaining = "=" + string(oPlayer.cursesLeft);
+var cursesRemaining = oPlayer.cursesLeft;
+var cursesRemainingText = "=" + string(cursesRemaining);
 var curse_text_x = TILE_SIZE*1.7
 var curse_text_y = TILE_SIZE*1.5
-draw_text(curse_text_x, curse_text_y, cursesRemaining)
+draw_text(curse_text_x, curse_text_y, cursesRemainingText)
 
 
 //display number of people alive
@@ -25,6 +26,7 @@ if (numPeople == 1) {
 
 draw_text(text_x, text_y, string(numPeople) + text)
 
+
 if (numPeople == 0) {
 	global.readyToAdvance = true
 	draw_text(text_x, advance_text_y, "smack any key u want")
@@ -40,4 +42,12 @@ if (numPeople == 0) {
 			room_goto_next()
 		}
 	}
+} else if (cursesRemaining == 0) {
+		global.readyToAdvance = true
+		draw_text(text_x, advance_text_y, "GAME OVER")
+		if (global.advanceNow) {
+			global.readyToAdvance = false
+			global.advanceNow = false
+			room_goto(roomIntro)
+		}
 }
