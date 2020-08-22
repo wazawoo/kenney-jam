@@ -53,12 +53,14 @@ function peopleMovement(){
 		if (ds_list_find_index(global.personCollisionTiles, tileIndex) != -1) {
 			//we have collided	
 			//show_debug_message()
+			moving = false;
 		}  else if (position_meeting(newX, newY, oPerson)) {
 			//we have collided with a collidable object
 			//(collide with other people)
 		} else {
 			//no collision
 			//free to move
+			moving = true
 			x = newX
 			y = newY
 		}

@@ -27,6 +27,16 @@ if (numPeople == 1) {
 draw_text(text_x, text_y, string(numPeople) + text)
 
 
+// Check if any villagers are moving
+var villagersAreMoving = false;
+with (oPerson) {
+	if (moving) {
+		villagersAreMoving = true;
+	} else {
+		villagersAreMoving = false;
+	}
+}
+
 if (numPeople == 0) {
 	global.readyToAdvance = true
 	draw_text(text_x, advance_text_y, "smack any key u want")
@@ -42,7 +52,7 @@ if (numPeople == 0) {
 			room_goto_next()
 		}
 	}
-} else if (cursesRemaining == 0) {
+} else if (cursesRemaining == 0 && !villagersAreMoving) {
 		global.readyToAdvance = true
 		draw_text(text_x, advance_text_y, "GAME OVER")
 		if (global.advanceNow) {
