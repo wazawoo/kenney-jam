@@ -4,6 +4,44 @@ function peopleMovement(){
 	with (oPerson) {
 		//do this for each instance of oPerson
 		
+		if (image_index == 0) {
+			//we are not cursed
+			//follow movement pattern
+			var len = string_length(movementPattern)
+			
+			if (len > 0) {
+				var char = string_char_at(movementPattern, moveIndex)
+				
+				show_debug_message("char: " + char)
+				
+				switch (char) {
+					case "u":
+						hSpeed = 0
+						vSpeed = -1
+						break;
+					case "r":
+						hSpeed = 1
+						vSpeed = 0
+						break;
+					case "l":
+						hSpeed = -1
+						vSpeed = 0
+						break;
+					case "d":
+						hSpeed = 0
+						vSpeed = 1
+						break;
+				}
+				
+				//string is indexed by 1, not 0
+				if (moveIndex < len) {
+					moveIndex++
+				} else {
+					moveIndex = 1
+				}
+			}
+		}
+		
 		var newX = x + hSpeed * TILE_SIZE
 		var newY = y + vSpeed * TILE_SIZE
 		
