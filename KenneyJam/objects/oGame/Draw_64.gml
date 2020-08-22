@@ -8,7 +8,7 @@ draw_set_valign(fa_middle)
 
 var text_x = RESOLUTION_W / 2
 var text_y = TILE_SIZE*2
-var advance_text_y = RESOLUTION_H - TILE_SIZE*1.5
+var advance_text_y = RESOLUTION_H - TILE_SIZE*1
 
 var numPeople = instance_number(oPerson)
 var text = " people remain"

@@ -7,7 +7,6 @@ game_set_speed(FRAME_RATE, gamespeed_fps);
 draw_set_font(fontMain);
 
 global.stepCount = 0
-global.tileMap = layer_tilemap_get_id(layer_get_id("Tiles_1"));
 global.readyToAdvance = false
 global.advanceNow = false
 
@@ -15,9 +14,8 @@ global.advanceNow = false
 //these numbers correspond to the index of the tile, which is the frame number - 1
 global.playerCollisionTiles = ds_list_create()
 
-
 //we are ghost
-//no collide for now
+//no collide with tiles for now
 //ds_list_add(global.playerCollisionTiles, 48)  //tree
 //ds_list_add(global.playerCollisionTiles, 248) //water - middle
 //ds_list_add(global.playerCollisionTiles, 249) //water - edge
@@ -25,14 +23,17 @@ global.playerCollisionTiles = ds_list_create()
 //ds_list_add(global.playerCollisionTiles, 556) //fire
 
 global.personCollisionTiles = ds_list_create()
-ds_list_add(global.personCollisionTiles, 54)  //cactus
+ds_list_add(global.personCollisionTiles, 54) //cactus
 
 global.personDeathTiles = ds_list_create()
 ds_list_add(global.personDeathTiles, 200) //water
 ds_list_add(global.personDeathTiles, 201) //water
 ds_list_add(global.personDeathTiles, 202) //water
+ds_list_add(global.personDeathTiles, 203) //water
+ds_list_add(global.personDeathTiles, 204) //water
 ds_list_add(global.personDeathTiles, 249) //water
 ds_list_add(global.personDeathTiles, 250) //water
 ds_list_add(global.personDeathTiles, 251) //water
 ds_list_add(global.personDeathTiles, 252) //water
+ds_list_add(global.personDeathTiles, 253) //water
 ds_list_add(global.personDeathTiles, 556) //fire
