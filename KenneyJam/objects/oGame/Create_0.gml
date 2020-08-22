@@ -26,7 +26,11 @@ global.personCollisionTiles = ds_list_create()
 ds_list_add(global.personCollisionTiles, 54)  //cactus
 
 global.personDeathTiles = ds_list_create()
-ds_list_add(global.personDeathTiles, 248) //water - middle
-ds_list_add(global.personDeathTiles, 249) //water - edge
-ds_list_add(global.personDeathTiles, 250) //water - corner
+ds_list_add(global.personDeathTiles, 200) //water
+ds_list_add(global.personDeathTiles, 201) //water
+ds_list_add(global.personDeathTiles, 202) //water
+ds_list_add(global.personDeathTiles, 249) //water
+ds_list_add(global.personDeathTiles, 250) //water
+ds_list_add(global.personDeathTiles, 251) //water
+ds_list_add(global.personDeathTiles, 252) //water
 ds_list_add(global.personDeathTiles, 556) //fire
