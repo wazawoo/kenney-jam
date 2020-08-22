@@ -4,3 +4,5 @@
 //in tiles per second
 hSpeed = 0
 vSpeed = 0
+
+lastDir = 270

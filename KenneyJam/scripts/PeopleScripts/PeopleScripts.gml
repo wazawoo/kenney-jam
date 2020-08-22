@@ -7,6 +7,7 @@ function peopleMovement(){
 		var newX = x + hSpeed * TILE_SIZE
 		var newY = y + vSpeed * TILE_SIZE
 		
+		
 		var tileData = tilemap_get_at_pixel(global.tileMap, newX, newY)
 		var tileIndex = tileData & tile_index_mask
 	
