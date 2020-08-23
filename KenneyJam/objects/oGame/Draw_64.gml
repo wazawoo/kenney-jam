@@ -32,8 +32,6 @@ var villagersAreMoving = false;
 with (oPerson) {
 	if (moving) {
 		villagersAreMoving = true;
-	} else {
-		villagersAreMoving = false;
 	}
 }
 
