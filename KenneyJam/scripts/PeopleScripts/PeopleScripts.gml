@@ -48,6 +48,7 @@ function peopleMovement(){
 		var tileIndex = tileData & tile_index_mask
 	
 		//move
+		//outside tile index: 524287
 		if (tileIndex != 0) {
 			//we have collided	
 			//show_debug_message()
