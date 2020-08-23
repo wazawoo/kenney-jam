@@ -57,12 +57,13 @@ if (numPeople == 0) {
 		
 		audio_play_sound(soNewRoom, 1, false)
 	}
-} else if (cursesRemaining == 0 && !villagersAreMoving) {
-		global.readyToAdvance = true
-		draw_text(text_x, advance_text_y, "GAME OVER")
-		if (global.advanceNow) {
-			global.readyToAdvance = false
-			global.advanceNow = false
-			room_goto(roomIntro)
-		}
-}
+} 
+//else if (cursesRemaining == 0 && !villagersAreMoving) {
+//		global.readyToAdvance = true
+//		draw_text(text_x, advance_text_y, "GAME OVER")
+//		if (global.advanceNow) {
+//			global.readyToAdvance = false
+//			global.advanceNow = false
+//			room_goto(roomIntro)
+//		}
+//}
