@@ -44,7 +44,7 @@
 826,822,826,2147483648,978,2147483648,976,2147483648,805306816,978,2147483648,784,785,785,785,785,785,785,785,785,
 2147483648,2147483648,2147483648,2147483648,978,2147483648,976,2147483648,805306816,978,2147483648,832,833,920,1879048343,960,1879048343,960,1879048343,960,
 2147483648,2147483648,2147483648,2147483648,978,2147483648,976,2147483648,805306816,978,2147483648,1073742272,1073742272,1073742272,1073742272,1073742272,1073742272,1073742272,1073742272,1073742272,
-1025,1025,1025,1025,1026,2147483648,976,2147483648,805306816,978,2147483648,832,99,50,99,50,99,51,50,556,
+1025,1025,1025,1025,1026,556,976,2147483648,805306816,978,556,832,99,50,99,50,99,51,50,556,
 ],},"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Tiles_1","tags":[],"resourceType":"GMRTileLayer",},
     {"spriteId":null,"colour":4278190080,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
