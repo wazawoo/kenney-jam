@@ -75,9 +75,8 @@
   "RoomOrder": [
     {"name":"roomIntro","path":"rooms/roomIntro/roomIntro.yy",},
     {"name":"room1","path":"rooms/room1/room1.yy",},
+    {"name":"room2","path":"rooms/room2/room2.yy",},
     {"name":"room3","path":"rooms/room3/room3.yy",},
-    {"name":"room2","path":"rooms/room2/room2.yy",},
-    {"name":"room2","path":"rooms/room2/room2.yy",},
     {"name":"room4","path":"rooms/room4/room4.yy",},
     {"name":"room5","path":"rooms/room5/room5.yy",},
     {"name":"room6","path":"rooms/room6/room6.yy",},

@@ -52,11 +52,11 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_356E6FA9","path":"rooms/room1/room1.yy",},
     {"name":"inst_366FD5AF","path":"rooms/room1/room1.yy",},
     {"name":"inst_4D05231D","path":"rooms/room1/room1.yy",},
     {"name":"inst_53FE6B99","path":"rooms/room1/room1.yy",},
     {"name":"inst_799C5013","path":"rooms/room1/room1.yy",},
+    {"name":"inst_356E6FA9","path":"rooms/room1/room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

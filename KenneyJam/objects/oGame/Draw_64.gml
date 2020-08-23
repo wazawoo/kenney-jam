@@ -3,8 +3,13 @@
 
 // display number of curses you have left
 
-var cursesRemaining = oPlayer.cursesLeft;
-var cursesRemainingText = "=" + string(cursesRemaining);
+var cursesRemaining = 0
+var cursesRemainingText = ""
+with (oPlayer) {
+	cursesRemaining = cursesLeft
+	cursesRemainingText = "=" + string(cursesRemaining)
+}
+
 var curse_text_x = TILE_SIZE*1.7
 var curse_text_y = TILE_SIZE*1.5
 draw_text(curse_text_x, curse_text_y, cursesRemainingText)
