@@ -46,15 +46,20 @@ global.personDeathTiles = ds_list_create()
 // Adds all tiles as collision tiles unless in deathTiles array
 // then add as death tile
 
-for (var i = 1; i < 1009; i ++) {
-	for (var itwo = 0; itwo < array_length_1d(deathTiles); itwo++) {	
-		if (i == deathTiles[itwo]) {
-			ds_list_add(global.personDeathTiles, i) //water
-		} else {
-			ds_list_add(global.personCollisionTiles, i) //cactus
-		}
-	}
+for (var i = 0; i < array_length(deathTiles); i++) {
+	ds_list_add(global.personDeathTiles, deathTiles[i])
 }
+
+
+//for (var i = 1; i < 1009; i ++) {
+//	for (var itwo = 0; itwo < array_length_1d(deathTiles); itwo++) {	
+//		if (i == deathTiles[itwo]) {
+//			ds_list_add(global.personDeathTiles, i) //water
+//		} else {
+//			ds_list_add(global.personCollisionTiles, i) //cactus
+//		}
+//	}
+//}
 
 
 //ds_list_add(global.personCollisionTiles, 54) //cactus

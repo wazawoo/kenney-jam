@@ -50,7 +50,7 @@ function peopleMovement(){
 		var tileIndex = tileData & tile_index_mask
 	
 		//move
-		if (ds_list_find_index(global.personCollisionTiles, tileIndex) != -1) {
+		if (tileIndex != 0) {
 			//we have collided	
 			//show_debug_message()
 			moving = false;
