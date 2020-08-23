@@ -72,8 +72,11 @@ function playerAction(keySpace) {
 				newCurse.hSpeed = dx
 				newCurse.vSpeed = dy
 				cursesLeft -= 1;
+				
+				audio_play_sound(soCurse, 1, false)
+			} else {
+				audio_play_sound(soEmptyCurse, 1, false)
 			}
-			
 		}	
 	}	
 }

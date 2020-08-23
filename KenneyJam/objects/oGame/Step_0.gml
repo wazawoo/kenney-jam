@@ -14,6 +14,7 @@ if (global.readyToAdvance) {
 }
 
 if (keyR) {
+	audio_play_sound(soRetry, 1, false)
 	room_goto(room)
 }
 

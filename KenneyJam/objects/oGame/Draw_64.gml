@@ -49,6 +49,8 @@ if (numPeople == 0) {
 		} else {
 			room_goto_next()
 		}
+		
+		audio_play_sound(soNewRoom, 1, false)
 	}
 } else if (cursesRemaining == 0 && !villagersAreMoving) {
 		global.readyToAdvance = true
