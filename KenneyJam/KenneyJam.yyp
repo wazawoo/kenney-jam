@@ -10,6 +10,7 @@
     {"id":{"name":"sSpace","path":"sprites/sSpace/sSpace.yy",},"order":10,},
     {"id":{"name":"sBeam","path":"sprites/sBeam/sBeam.yy",},"order":12,},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":1,},
+    {"id":{"name":"soLaser","path":"sounds/soLaser/soLaser.yy",},"order":0,},
     {"id":{"name":"roomIntro","path":"rooms/roomIntro/roomIntro.yy",},"order":1,},
     {"id":{"name":"sCar_l","path":"sprites/sCar_l/sCar_l.yy",},"order":15,},
     {"id":{"name":"PeopleScripts","path":"scripts/PeopleScripts/PeopleScripts.yy",},"order":2,},
