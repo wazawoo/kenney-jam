@@ -26,7 +26,7 @@
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tileSet","path":"tilesets/tileSet/tileSet.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":20,"SerialiseHeight":20,"TileSerialiseData":[
 51,51,51,51,51,51,51,51,51,51,51,51,51,51,99,51,51,51,51,51,
-564,0,0,582,582,0,0,0,0,0,0,0,0,0,0,582,582,582,582,582,
+564,0,0,582,582,0,0,0,0,0,0,0,0,0,0,582,582,0,0,0,
 826,826,826,826,826,0,0,0,0,0,0,0,0,0,0,826,826,826,826,826,
 826,826,826,436,826,197,197,197,197,197,155,197,197,197,197,826,436,826,826,826,
 53,48,0,0,48,97,98,96,96,96,0,96,96,96,97,48,2147483648,53,48,51,
