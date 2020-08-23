@@ -29,8 +29,14 @@ function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 			} else {
 				//no collision
 				//free to move
+				
+				if (newX != x || newY != y) {
+					audio_play_sound(global.moveSounds[irandom(array_length(global.moveSounds) - 1)], 1, false)
+				}
+				
 				x = newX
 				y = newY
+				
 			}
 		}
 	}	

@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "soDie.wav",
-  "duration": 0.380896,
+  "soundFile": "soMove2.wav",
+  "duration": 1.96627,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "soDie",
+  "name": "soMove2",
   "tags": [],
   "resourceType": "GMSound",
 }
