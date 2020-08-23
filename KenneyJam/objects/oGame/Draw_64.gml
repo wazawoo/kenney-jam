@@ -3,6 +3,8 @@
 
 // display number of curses you have left
 
+draw_set_color(c_white)
+
 var cursesRemaining = 0
 var cursesRemainingText = ""
 with (oPlayer) {
@@ -10,10 +12,12 @@ with (oPlayer) {
 	cursesRemainingText = "=" + string(cursesRemaining)
 }
 
-var curse_text_x = TILE_SIZE*1.7
+draw_set_halign(fa_left)
+var curse_text_x = TILE_SIZE
 var curse_text_y = TILE_SIZE*1.5
-draw_text(curse_text_x, curse_text_y, cursesRemainingText)
-
+if (room != roomEnd) {
+	draw_text(curse_text_x, curse_text_y, cursesRemainingText)
+}
 
 //display number of people alive
 draw_set_halign(fa_center)
@@ -24,12 +28,14 @@ var text_y = TILE_SIZE*2
 var advance_text_y = RESOLUTION_H - TILE_SIZE*1
 
 var numPeople = instance_number(oPerson)
-var text = " people remain"
+var text = " villagers remain"
 if (numPeople == 1) {
-	text = " person remains"
+	text = " villager remains"
 }
 
-draw_text(text_x, text_y, string(numPeople) + text)
+if (room != roomEnd) {
+	draw_text(text_x, text_y, string(numPeople) + text)
+}
 
 
 // Check if any villagers are moving
@@ -40,11 +46,11 @@ with (oPerson) {
 	}
 }
 
-if (numPeople == 0) {
+if (numPeople == 0 || oGame.keyN) {
 	global.readyToAdvance = true
 	draw_text(text_x, advance_text_y, "smack any key u want")
 	
-	if (global.advanceNow) {
+	if (global.advanceNow || oGame.keyN) {
 		global.readyToAdvance = false
 		global.advanceNow = false
 		
@@ -67,3 +73,31 @@ if (numPeople == 0) {
 //			room_goto(roomIntro)
 //		}
 //}
+
+
+
+if (room == roomEnd) {
+	//draw end text
+	
+	//congrats!
+	draw_text(RESOLUTION_W/2, TILE_SIZE*2, "CONGRATS!")
+	
+	//you completed
+	draw_text(RESOLUTION_W/2, TILE_SIZE*4, "You completed GHOSTY")
+	
+	//GHOSTY
+	
+	//in N seconds
+	draw_text(RESOLUTION_W/2, TILE_SIZE*6, "in " + string(global.gameTime) + " seconds")
+	
+	//with X curses
+	draw_text(RESOLUTION_W/2, TILE_SIZE*8, "using " + string(global.cursesUsed) + " curses")
+	
+} else {
+	//draw game timer
+	draw_set_halign(fa_left)
+	draw_set_color(c_yellow)
+	draw_text(RESOLUTION_W - 2*TILE_SIZE, TILE_SIZE*1.5, global.gameTime)
+}
+
+

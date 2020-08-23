@@ -19,6 +19,7 @@
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":1,},
     {"id":{"name":"room9","path":"rooms/room9/room9.yy",},"order":11,},
     {"id":{"name":"room4","path":"rooms/room4/room4.yy",},"order":6,},
+    {"id":{"name":"roomEnd","path":"rooms/roomEnd/roomEnd.yy",},"order":14,},
     {"id":{"name":"room6","path":"rooms/room6/room6.yy",},"order":8,},
     {"id":{"name":"soNewRoom","path":"sounds/soNewRoom/soNewRoom.yy",},"order":2,},
     {"id":{"name":"soLaser","path":"sounds/soLaser/soLaser.yy",},"order":0,},
@@ -84,6 +85,7 @@
     {"name":"room8","path":"rooms/room8/room8.yy",},
     {"name":"room9","path":"rooms/room9/room9.yy",},
     {"name":"room10","path":"rooms/room10/room10.yy",},
+    {"name":"roomEnd","path":"rooms/roomEnd/roomEnd.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

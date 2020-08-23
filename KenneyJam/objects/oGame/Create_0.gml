@@ -10,6 +10,9 @@ global.stepCount = 0
 global.readyToAdvance = false
 global.advanceNow = false
 
+global.gameTime = 0
+global.cursesUsed = 0
+
 global.moveSounds = [soMove1, soMove2, soMove3, soMove4]
 
 //tiles

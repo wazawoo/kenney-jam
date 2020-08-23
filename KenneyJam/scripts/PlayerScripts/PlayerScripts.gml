@@ -79,6 +79,8 @@ function playerAction(keySpace) {
 				newCurse.vSpeed = dy
 				cursesLeft -= 1;
 				
+				global.cursesUsed++
+				
 				audio_play_sound(soCurse, 1, false)
 			} else {
 				audio_play_sound(soEmptyCurse, 1, false)
