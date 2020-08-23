@@ -7,9 +7,14 @@ keyUp    = keyboard_check_pressed(vk_up)    || keyboard_check_pressed(ord("W"));
 keyDown  = keyboard_check_pressed(vk_down)  || keyboard_check_pressed(ord("S"));
 keySpace = keyboard_check_pressed(vk_space);
 keyAny   = keyboard_check_pressed(vk_anykey);
+keyR     = keyboard_check_pressed(ord("R"));
 
 if (global.readyToAdvance) {
 	global.advanceNow = keyAny
+}
+
+if (keyR) {
+	room_goto(room)
 }
 
 if (room == roomIntro) {
