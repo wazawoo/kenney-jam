@@ -29,8 +29,14 @@ function playerMovement(keyUp, keyLeft, keyRight, keyDown) {
 			} else {
 				//no collision
 				//free to move
+				
+				if (newX != x || newY != y) {
+					audio_play_sound(global.moveSounds[irandom(array_length(global.moveSounds) - 1)], 1, false)
+				}
+				
 				x = newX
 				y = newY
+				
 			}
 		}
 	}	
@@ -72,8 +78,11 @@ function playerAction(keySpace) {
 				newCurse.hSpeed = dx
 				newCurse.vSpeed = dy
 				cursesLeft -= 1;
+				
+				audio_play_sound(soCurse, 1, false)
+			} else {
+				audio_play_sound(soEmptyCurse, 1, false)
 			}
-			
 		}	
 	}	
 }

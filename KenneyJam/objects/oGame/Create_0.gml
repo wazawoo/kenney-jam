@@ -10,6 +10,8 @@ global.stepCount = 0
 global.readyToAdvance = false
 global.advanceNow = false
 
+global.moveSounds = [soMove1, soMove2, soMove3, soMove4]
+
 //tiles
 //these numbers correspond to the index of the tile, which is the frame number - 1
 global.playerCollisionTiles = ds_list_create()
