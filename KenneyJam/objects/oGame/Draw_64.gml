@@ -96,7 +96,7 @@ if (room == roomEnd) {
 } else {
 	//draw game timer
 	draw_set_halign(fa_left)
-	draw_set_color(c_yellow)
+	draw_set_color($98ffff)
 	draw_text(RESOLUTION_W - 2*TILE_SIZE, TILE_SIZE*1.5, global.gameTime)
 }
 
