@@ -12,8 +12,6 @@ function peopleMovement(){
 			if (len > 0) {
 				var char = string_char_at(movementPattern, moveIndex)
 				
-				show_debug_message("char: " + char)
-				
 				switch (char) {
 					case "u":
 						hSpeed = 0

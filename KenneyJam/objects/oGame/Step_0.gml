@@ -12,6 +12,14 @@ if (global.readyToAdvance) {
 	global.advanceNow = keyAny
 }
 
+if (room == roomIntro) {
+	if (keyboard_check(vk_space)) {
+		oSpace.image_index = 1
+	} else {
+		oSpace.image_index = 0
+	}
+}
+
 playerMovement(keyUp, keyLeft, keyRight, keyDown);
 playerAction(keySpace);
 
