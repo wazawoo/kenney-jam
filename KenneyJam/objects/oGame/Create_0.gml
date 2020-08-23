@@ -3,6 +3,7 @@
 
 //resize the surface so the gui is the same size as the game
 surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H);
+window_set_size(640, 640)
 game_set_speed(FRAME_RATE, gamespeed_fps);
 draw_set_font(fontMain);
 
