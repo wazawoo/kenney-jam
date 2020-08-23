@@ -1,7 +1,9 @@
 {
   "resources": [
+    {"id":{"name":"sCar_r","path":"sprites/sCar_r/sCar_r.yy",},"order":16,},
     {"id":{"name":"ghost_r","path":"sprites/ghost_r/ghost_r.yy",},"order":4,},
     {"id":{"name":"oPerson","path":"objects/oPerson/oPerson.yy",},"order":2,},
+    {"id":{"name":"Sprite18","path":"sprites/Sprite18/Sprite18.yy",},"order":17,},
     {"id":{"name":"room1","path":"rooms/room1/room1.yy",},"order":2,},
     {"id":{"name":"oSpace","path":"objects/oSpace/oSpace.yy",},"order":4,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
@@ -9,6 +11,7 @@
     {"id":{"name":"sBeam","path":"sprites/sBeam/sBeam.yy",},"order":12,},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},"order":1,},
     {"id":{"name":"roomIntro","path":"rooms/roomIntro/roomIntro.yy",},"order":1,},
+    {"id":{"name":"sCar_l","path":"sprites/sCar_l/sCar_l.yy",},"order":15,},
     {"id":{"name":"PeopleScripts","path":"scripts/PeopleScripts/PeopleScripts.yy",},"order":2,},
     {"id":{"name":"sTank","path":"sprites/sTank/sTank.yy",},"order":11,},
     {"id":{"name":"tileSet","path":"tilesets/tileSet/tileSet.yy",},"order":0,},
@@ -16,6 +19,8 @@
     {"id":{"name":"ghost_u","path":"sprites/ghost_u/ghost_u.yy",},"order":0,},
     {"id":{"name":"oBeam","path":"objects/oBeam/oBeam.yy",},"order":6,},
     {"id":{"name":"sCurse","path":"sprites/sCurse/sCurse.yy",},"order":1,},
+    {"id":{"name":"sCar_d","path":"sprites/sCar_d/sCar_d.yy",},"order":14,},
+    {"id":{"name":"sCar_u","path":"sprites/sCar_u/sCar_u.yy",},"order":13,},
     {"id":{"name":"fontMain","path":"fonts/fontMain/fontMain.yy",},"order":0,},
     {"id":{"name":"person_u","path":"sprites/person_u/person_u.yy",},"order":8,},
     {"id":{"name":"sPerson","path":"sprites/sPerson/sPerson.yy",},"order":2,},
@@ -27,6 +32,8 @@
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":1,},
     {"id":{"name":"ghost_l","path":"sprites/ghost_l/ghost_l.yy",},"order":3,},
     {"id":{"name":"person_r","path":"sprites/person_r/person_r.yy",},"order":9,},
+    {"id":{"name":"carScripts","path":"scripts/carScripts/carScripts.yy",},"order":3,},
+    {"id":{"name":"oCar","path":"objects/oCar/oCar.yy",},"order":7,},
     {"id":{"name":"room2","path":"rooms/room2/room2.yy",},"order":0,},
   ],
   "Options": [
