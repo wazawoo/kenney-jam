@@ -33,7 +33,6 @@
     {"id":{"name":"soMove1","path":"sounds/soMove1/soMove1.yy",},"order":8,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":6,},
     {"id":{"name":"ghost_u","path":"sprites/ghost_u/ghost_u.yy",},"order":0,},
-    {"id":{"name":"room10","path":"rooms/room10/room10.yy",},"order":12,},
     {"id":{"name":"room7","path":"rooms/room7/room7.yy",},"order":9,},
     {"id":{"name":"oBeam","path":"objects/oBeam/oBeam.yy",},"order":6,},
     {"id":{"name":"sCurse","path":"sprites/sCurse/sCurse.yy",},"order":1,},
@@ -84,7 +83,6 @@
     {"name":"room7","path":"rooms/room7/room7.yy",},
     {"name":"room8","path":"rooms/room8/room8.yy",},
     {"name":"room9","path":"rooms/room9/room9.yy",},
-    {"name":"room10","path":"rooms/room10/room10.yy",},
     {"name":"roomEnd","path":"rooms/roomEnd/roomEnd.yy",},
   ],
   "Folders": [
