@@ -32,6 +32,7 @@ if (global.stepCount % FRAME_RATE == 0) {
 	//one second timer
 	
 	peopleMovement()
+	carMovement()
 	
 }
 

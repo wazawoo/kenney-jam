@@ -20,6 +20,9 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"oPerson","path":"objects/oPerson/oPerson.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":144.0,"y":80.0,"resourceVersion":"1.0","name":"inst_4D05231D","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oPerson","path":"objects/oPerson/oPerson.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":112.0,"y":80.0,"resourceVersion":"1.0","name":"inst_53FE6B99","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"oPerson","path":"objects/oPerson/oPerson.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":80.0,"resourceVersion":"1.0","name":"inst_7A0DE661","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[
+            {"propertyId":{"name":"movementPattern","path":"objects/oCar/oCar.yy",},"objectId":{"name":"oCar","path":"objects/oCar/oCar.yy",},"value":"rrrrrdddddddllllluuuuuuu","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+          ],"isDnd":false,"objectId":{"name":"oCar","path":"objects/oCar/oCar.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":80.0,"y":112.0,"resourceVersion":"1.0","name":"inst_2D55B103","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"tilesetId":{"name":"tileSet","path":"tilesets/tileSet/tileSet.yy",},"x":0,"y":0,"tiles":{"SerialiseWidth":20,"SerialiseHeight":20,"TileSerialiseData":[
 51,51,51,51,51,51,51,51,51,51,51,51,51,51,99,51,51,51,51,51,
@@ -54,6 +57,7 @@
     {"name":"inst_4D05231D","path":"rooms/room2/room2.yy",},
     {"name":"inst_53FE6B99","path":"rooms/room2/room2.yy",},
     {"name":"inst_7A0DE661","path":"rooms/room2/room2.yy",},
+    {"name":"inst_2D55B103","path":"rooms/room2/room2.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
