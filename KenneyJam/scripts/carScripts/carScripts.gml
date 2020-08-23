@@ -48,20 +48,20 @@ function carMovement(){
 	
 		//move
 		//outside tile index: 524287
-		if (tileIndex != 0) {
+		//if (tileIndex != 0) {
 			//we have collided	
 			//show_debug_message()
 			
-		}  else if (position_meeting(newX, newY, oPerson)) {
+		//}  else if (position_meeting(newX, newY, oPerson)) {
 			//we have collided with a collidable object
 			//(collide with other people)
-		} else {
+		//} else {
 			//no collision
 			//free to move
 			
 			x = newX
 			y = newY
-		}
+		//}
 		
 		//check if we need to die
 		/*if (x < 0 || x >= room_width || y < 0 || y >= room_height) {
